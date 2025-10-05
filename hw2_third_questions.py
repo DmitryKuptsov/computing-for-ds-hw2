@@ -4,8 +4,6 @@ def total_registered_cases(data, country):
     arr_cases = data[country]
     return sum(arr_cases)
 
-total_registered_cases({'Spain': [4, 8, 2, 0, 1], 'France': [2, 3, 6], 'Italy': [6, 8, 1, 7]}, 'Italy')
-
 
 def total_registered_cases_per_country(data):
     dict_total_cases = {}
@@ -13,8 +11,6 @@ def total_registered_cases_per_country(data):
         total = total_registered_cases(data, country)
         dict_total_cases[country] = total
     return dict_total_cases
-
-total_registered_cases_per_country({'Spain': [4, 8, 2, 0, 1], 'France': [2, 3, 6], 'Italy': [6, 8, 1, 7]})
 
 
 def country_with_most_cases(data):
